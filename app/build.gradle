@@ -1,0 +1,128 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+  //  id 'applovin-quality-service'
+}
+
+/*
+applovin {
+    apiKey "eJ6Pv2z2ebmO0g7ry-x2AuUUxTrLvULc7GTt734lIskAWu2JqEK2yFQSw6vGXtCSCm-Ka9HXndUOSMeZ-IUsx_"
+}
+*/
+
+     //   implementation 'com.applovin.mediation:vungle-adapter:+'
+
+
+android {
+    compileSdkVersion 33
+    buildToolsVersion '31.0.0'
+
+    defaultConfig {
+        //applicationId "com.volumeboosterusa.akrodev"
+        minSdkVersion 24
+        targetSdkVersion 33
+        versionCode 20230913
+        versionName "20230913"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+//
+//    signingConfigs {
+//        debugSignature {
+//            storeFile file('../signatures/volumebooster.jks')
+//            keyAlias 'key0'
+//            keyPassword '123456'
+//            storePassword '123456'
+//        }
+//        emaxUSASignature {
+//            storeFile file('../signatures/volumebooster.jks')
+//            keyAlias 'key0'
+//            keyPassword '123456'
+//            storePassword '123456'
+//        }
+//        aadevelopersSignature {
+//            storeFile file('../signatures/aadevelopers.jks')
+//            keyAlias 'key0'
+//            keyPassword '123456'
+//            storePassword '123456'
+//        }
+//        akrodevSignature{
+//            storeFile file('../signatures/akrodev.jks')
+//            keyAlias 'key0'
+//            keyPassword 'parmenion'
+//            storePassword 'parmenion'
+//        }
+//    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = [app_name:"Abdo Volume Booster",
+                                    app_id:"ca-app-pub-8059669329564617~6396214353ii",
+                                    app_class:"com.abdo.volumebooster.BoosterAdmobApp",
+                                    applovin_sdk_key:"PZ76wchRmfJBxaxoXDyZaxx1pA_mZUL6tTQ-Z4cBXZ09RxKDMwK-x-iQ940BoI8kBWczzF_5IKT9FKDIno3g6c"]
+
+            resValue "string", "banner_id",  "ca-app-pub-8059669329564617/9872602540"
+            resValue "string", "interstitialid", "ca-app-pub-8059669329564617/5933357530"
+            resValue "string", "native_banner_id", "-"
+            resValue "string", "appopenid", "ca-app-pub-8059669329564617/8719302970"
+
+            buildConfigField "boolean", "splash_appopen", "false"
+            buildConfigField "int", "interClicksInterval", "4"
+            buildConfigField "int", "minMSecsBetweenInter", "2000"
+            buildConfigField "boolean", "splash_captcha", "false"
+            buildConfigField "int", "clicksToFirstInter", "2"
+            buildConfigField "boolean", "hasAds", "true"
+        }
+        debug {
+            debuggable true
+            minifyEnabled false
+            manifestPlaceholders = [app_name:"Abdo Volume Booster",
+                                    app_id:"ca-app-pub-8059669329564617~6396214353",
+                                    app_class:"com.abdo.volumebooster.BoosterAdmobApp",
+                                    applovin_sdk_key:"PZ76wchRmfJBxaxoXDyZaxx1pA_mZUL6tTQ-Z4cBXZ09RxKDMwK-x-iQ940BoI8kBWczzF_5IKT9FKDIno3g6c"]
+
+            resValue "string", "banner_id",  "ca-app-pub-8059669329564617/9872602549"
+            resValue "string", "interstitialid", "ca-app-pub-8059669329564617/5933357538"
+            resValue "string", "native_banner_id", "-"
+            resValue "string", "appopenid", "ca-app-pub-8059669329564617/8719302971"
+
+            buildConfigField "boolean", "splash_appopen", "false"
+            buildConfigField "int", "interClicksInterval", "4"
+            buildConfigField "int", "minMSecsBetweenInter", "2000"
+            buildConfigField "boolean", "splash_captcha", "false"
+            buildConfigField "int", "clicksToFirstInter", "2"
+            buildConfigField "boolean", "hasAds", "true"
+        }
+    }
+
+    flavorDimensions "radio"
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.android.gms:play-services-ads:21.3.0'
+    implementation 'com.google.firebase:firebase-crashlytics:18.3.2'
+    implementation 'com.google.firebase:firebase-analytics:21.2.0'
+    implementation project(path: ':knoblibrary')
+    implementation project(path: ':utils')
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    implementation "androidx.lifecycle:lifecycle-runtime:2.5.1"
+    implementation "androidx.lifecycle:lifecycle-common-java8:2.5.1"
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'com.onesignal:OneSignal:[4.0.0 , 4.99.99]'
+    implementation 'com.google.android.ump:user-messaging-platform:2.1.0'
+}

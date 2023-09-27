@@ -1,0 +1,52 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.VolumeBooster" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="NavigationViewStyle">
+        <item name="android:textSize">17sp</item>
+        <item name="listPreferredItemHeightSmall">56dp</item>
+    </style>
+
+
+  <!--  <style name="skin_01">
+      &lt;!&ndash;  <item name="android:windowFullscreen">true</item>
+        <item name="back_btn_focus">@drawable/btn_percent_press_01</item>
+        <item name="back_color">@color/back_color_01</item>
+        <item name="btn_next">@drawable/btn_next_01</item>
+        <item name="btn_pause">@drawable/btn_pause_01</item>
+        <item name="btn_percents">@drawable/btn_percent_01</item>
+        <item name="btn_play">@drawable/btn_play_01</item>
+        <item name="btn_previous">@drawable/btn_previous_01</item>
+        <item name="btn_settings">@drawable/skin_01_b_settings</item>
+        <item name="colorAccent">@color/colorAccent_01</item>
+        <item name="colorPrimary">@color/colorPrimary_01</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_01</item>
+        <item name="color_progress_end">@color/color_progress_end_01</item>
+        <item name="color_progress_start">@color/color_progress_start_01</item>
+        <item name="img_audio">@drawable/skin_01_i_audio</item>
+        <item name="img_bg">@drawable/skin_01_bg</item>
+        <item name="img_footer">@drawable/skin_01_footer</item>
+        <item name="img_header">@drawable/skin_01_header_speaker</item>
+        <item name="img_logo">@drawable/skin_01_logo</item>
+        <item name="img_sound">@drawable/skin_01_i_sound</item>&ndash;&gt;
+        <item name="img_volume_bg">@drawable/skin_01_volume_bg</item>
+        <item name="img_volume_knob">@drawable/skin_01_volume_knob</item>
+       &lt;!&ndash; <item name="progress_back_color">@color/progress_back_color_01</item>
+        <item name="progress_thumb">@drawable/progress_thumb_01</item>
+        <item name="progress_track">@drawable/progress_track_01</item>
+        <item name="taxi_visibility">2</item>
+        <item name="text_color">@color/text_color_01</item>&ndash;&gt;
+    </style>-->
+</resources>

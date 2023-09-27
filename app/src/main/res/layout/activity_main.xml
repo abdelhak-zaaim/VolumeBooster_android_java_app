@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="266dp"
+        android:layout_height="268dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/skin_01_volume_bg"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <it.beppi.knoblibrary.Knob
+        android:id="@+id/knob_volume"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:kAnimationBounciness="20"
+        app:kAnimationSpeed="10"
+        app:kBorderWidth="0dp"
+        app:kCircularIndicatorColor="@color/transparent"
+        app:kCircularIndicatorRelativePosition="0.55"
+        app:kCircularIndicatorRelativeRadius="0.03"
+        app:kDefaultState="0"
+        app:kFreeRotation="false"
+        app:kIndicatorWidth="0dp"
+        app:kKnobDrawable="@drawable/skin_01_volume_knob"
+        app:kKnobDrawableRotates="true"
+        app:kMaxAngle="136"
+        app:kMinAngle="-136"
+        app:kNumberOfStates="270"
+        app:kSelectedStateMarkerColor="@color/green_a200"
+
+        app:kSelectedStateMarkerContinuous="true"
+        app:kStateMarkersAccentColor="@android:color/transparent"
+        app:kStateMarkersAccentPeriodicity="13"
+        app:kStateMarkersAccentRelativeLength="0.1"
+        app:kStateMarkersAccentWidth="1dp"
+        app:kStateMarkersColor="@android:color/transparent"
+        app:kStateMarkersRelativeLength="0.08"
+        app:kStateMarkersWidth="1dp"
+        app:kSwipeSensitivityPixels="15"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+
+    <it.beppi.knoblibrary.Knob
+        android:id="@+id/knob"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="48dp"
+        android:visibility="gone"
+        app:kAnimationBounciness="20"
+        app:kAnimationSpeed="10"
+        app:kBalloonValuesAnimation="fade"
+        app:kBalloonValuesRelativePosition="0.25"
+        app:kBalloonValuesTextSize="4sp"
+        app:kBorderWidth="0dp"
+        app:kCircularIndicatorColor="@color/green_a200"
+        app:kCircularIndicatorRelativePosition="0.55"
+        app:kCircularIndicatorRelativeRadius="0.03"
+        app:kDefaultState="10"
+        app:kFreeRotation="false"
+        app:kIndicatorWidth="0dp"
+        app:kKnobDrawable="@drawable/knob3"
+        app:kKnobDrawableRotates="true"
+        app:kMaxAngle="136"
+        app:kMinAngle="-136"
+        app:kNumberOfStates="270"
+        app:kStateMarkersAccentColor="@color/grey_800"
+        app:kStateMarkersAccentPeriodicity="5"
+        app:kStateMarkersAccentRelativeLength="0.09"
+        app:kStateMarkersAccentWidth="2dp"
+        app:kStateMarkersColor="@color/grey_800"
+        app:kStateMarkersRelativeLength="0.08"
+        app:kStateMarkersWidth="1dp"
+        app:kSwipeSensitivityPixels="15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btn_60_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/btn_per"
+        android:text="60%"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/footer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.13"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="12dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_audio"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintHeight_percent="0.8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_previous"
+            app:layout_constraintEnd_toStartOf="@+id/btn_previous"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/btn_previous">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Open Music Player"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/btn_previous"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@+id/imageView4"
+                app:layout_constraintTop_toTopOf="@+id/btn_previous" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="No Music Track"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@+id/btn_previous"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@+id/imageView4"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_next"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginRight="4dp"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn_play"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginRight="4dp"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_play"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/btn_next"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn_previous"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginRight="4dp"
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_previous"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/btn_play"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

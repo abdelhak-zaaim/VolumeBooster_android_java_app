@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "168536836315",
+    "project_id": "volume-booster-b999f",
+    "storage_bucket": "volume-booster-b999f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168536836315:android:72678c03ed3b43cc3b24fe",
+        "android_client_info": {
+          "package_name": "com.abdo.volumebooster"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "168536836315-lbp5ogmrg79s15bn2uqasrk8nohlhoc8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZ-hu5hH-BeNIut8WTXONBXMsPipOGIfg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "168536836315-lbp5ogmrg79s15bn2uqasrk8nohlhoc8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-8059669329564617~6396214353"
+    }
+  ],
+  "configuration_version": "1"
+}

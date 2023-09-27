@@ -1,0 +1,4 @@
+<resources>
+    <string name="splash_volume_booster_icon">Volume Booster</string>
+    <string name="open_music_player">Open Music Player</string>
+</resources>

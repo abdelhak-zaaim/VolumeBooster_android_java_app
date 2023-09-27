@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_color_main">#5A4E4E</color>  <!-- FF000000 -->
+    <color name="background_color_content">#514747</color>  <!-- FF000000 -->
+    <color name="ic_launcher_background">#FF000000</color>
+    <color name="splash_text_color">#FFFFFFFF</color>
+
+</resources>

@@ -1,0 +1,52 @@
+apply plugin: 'com.android.library'
+
+ext {
+    bintrayRepo = 'Croller'
+    bintrayName = 'croller'
+
+    publishedGroupId = 'com.sdsmdg.harjot'
+    libraryName = 'Croller'
+    artifact = 'croller'
+
+    libraryDescription = 'A circular seekbar for Android, with a control knob! (for the lack of a better word).'
+
+    siteUrl = 'https://github.com/harjot-oberai/Croller'
+    gitUrl = 'https://github.com/harjot-oberai/Croller.git'
+
+    libraryVersion = '1.0.7'
+
+    developerId = 'harjot-oberai'
+    developerName = 'Harjot Singh Oberai'
+    developerEmail = 'harjot.oberai@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+version = '1.0.1'
+
+android {
+    compileSdkVersion 32
+    buildToolsVersion '31.0.0'
+
+    defaultConfig {
+        minSdkVersion 24
+        targetSdkVersion 32
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+}
+
+//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+//apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
