@@ -57,10 +57,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     BroadcastReceiver trackChanged;
     public DrawerLayout drawerLayout;
     public  NavigationView navigationView;
- //   AdView mAdView;
-  //  private AppOpenAd appOpenAd = null;
-  //  private AppOpenAd.AppOpenAdLoadCallback loadCallback;
-    ///////////////
+
     private int targetGain = 0;
     private Equalizer equalizer;
     private LoudnessEnhancer loudnessEnhancer=null;
@@ -279,7 +276,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 btn_160_percent.setBackground( getDrawable( R.drawable.btn_press ) );
                 //
                 interstitialCheck();
-               // MainActivity.this.btn_160_percent.setBackground(ThemesUtils.getBtnSelectPercents(MainActivity.this));
                 MainActivity.this.knob.forceState(162, true);
                 MainActivity mainActivity = MainActivity.this;
                 mainActivity.setSystemVolume(13);
@@ -340,10 +336,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } );
 
 
-        ///registerReceiver(this.trackChanged, new IntentFilter("TRACK_CHANGED"));
-       // registerReceiver(this.checkPremiumBroadcast, new IntentFilter("CHECK_PREMIUM"));
-      //  registerReceiver(this.adsBroadcast, new IntentFilter("ADS_READY"));
-       // startService(new Intent(this, ExtraVolumeService.class));
+        
         IntentFilter iF = new IntentFilter();
         iF.addAction("com.android.music.metachanged");
 
