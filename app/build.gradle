@@ -61,14 +61,14 @@ android {
             debuggable false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             manifestPlaceholders = [app_name:"Abdo Volume Booster",
-                                    app_id:"ca-app-pub-8059669329564617~6396214353ii",
+                                    app_id:"",
                                     app_class:"com.abdo.volumebooster.BoosterAdmobApp",
-                                    applovin_sdk_key:"PZ76wchRmfJBxaxoXDyZaxx1pA_mZUL6tTQ-Z4cBXZ09RxKDMwK-x-iQ940BoI8kBWczzF_5IKT9FKDIno3g6c"]
+                                    applovin_sdk_key:""]
 
-            resValue "string", "banner_id",  "ca-app-pub-8059669329564617/9872602540"
-            resValue "string", "interstitialid", "ca-app-pub-8059669329564617/5933357530"
+            resValue "string", "banner_id",  ""
+            resValue "string", "interstitialid", ""
             resValue "string", "native_banner_id", "-"
-            resValue "string", "appopenid", "ca-app-pub-8059669329564617/8719302970"
+            resValue "string", "appopenid", ""
 
             buildConfigField "boolean", "splash_appopen", "false"
             buildConfigField "int", "interClicksInterval", "4"
@@ -81,14 +81,14 @@ android {
             debuggable true
             minifyEnabled false
             manifestPlaceholders = [app_name:"Abdo Volume Booster",
-                                    app_id:"ca-app-pub-8059669329564617~6396214353",
+                                    app_id:"",
                                     app_class:"com.abdo.volumebooster.BoosterAdmobApp",
-                                    applovin_sdk_key:"PZ76wchRmfJBxaxoXDyZaxx1pA_mZUL6tTQ-Z4cBXZ09RxKDMwK-x-iQ940BoI8kBWczzF_5IKT9FKDIno3g6c"]
+                                    applovin_sdk_key:""]
 
-            resValue "string", "banner_id",  "ca-app-pub-8059669329564617/9872602549"
-            resValue "string", "interstitialid", "ca-app-pub-8059669329564617/5933357538"
+            resValue "string", "banner_id",  ""
+            resValue "string", "interstitialid", ""
             resValue "string", "native_banner_id", "-"
-            resValue "string", "appopenid", "ca-app-pub-8059669329564617/8719302971"
+            resValue "string", "appopenid", ""
 
             buildConfigField "boolean", "splash_appopen", "false"
             buildConfigField "int", "interClicksInterval", "4"
